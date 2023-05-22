@@ -1,0 +1,16 @@
+Start by creating an HTML file (index.html) with the basic structure. You can include a heading, an input field to add tasks, and an empty unordered list (<ul>) to display the tasks.
+
+In your JavaScript file (script.js), start by selecting the necessary elements from the HTML file using DOM manipulation methods like getElementById or querySelector.
+
+Create an empty array to store the tasks.
+
+Add an event listener to the input field to capture the user's input when they press the "Enter" key. Inside the event listener, retrieve the input value and add it to the tasks array.
+
+Create a function to render the tasks. This function should iterate over the tasks array and dynamically create <li> elements for each task. Append these elements to the <ul> element to display them on the page.
+
+Call the render function initially to display any existing tasks from the array.
+
+Add functionality to mark a task as complete. You can do this by adding an event listener to each task item (<li>) and toggling a CSS class to change its appearance.
+
+Finally, implement the ability to delete tasks. Add a delete button next to each task item, and when clicked, remove the corresponding task from the array and update the display.
+
