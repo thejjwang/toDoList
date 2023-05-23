@@ -14,3 +14,6 @@ Add functionality to mark a task as complete. You can do this by adding an event
 
 Finally, implement the ability to delete tasks. Add a delete button next to each task item, and when clicked, remove the corresponding task from the array and update the display.
 
+// for hw 
+// add styling 
+// refactor loop use .map instead

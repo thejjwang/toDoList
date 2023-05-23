@@ -18,19 +18,31 @@ function myFunction(){
 }
 function renderTasks(){
     ul.innerHTML = "";
-    for (let i = 0; i < newArr.length; i++){
-        let newLi = document.createElement('li');
-        let newButton = document.createElement('button')
-        newButton.addEventListener('click', deleteItem)
-        newButton.textContent = "delete";
-        newLi.textContent = newArr[i];
-        newLi.addEventListener('click', deleteItem)
-        ul.appendChild(newLi);
-        newLi.appendChild(newButton);
+    newArr.map((listItem) => {
+    let newLi = document.createElement('li');
+    let newButton = document.createElement('button');
+    newButton.addEventListener('click', deleteItem);
+    newButton.textContent = "delete";
+    newLi.textContent = listItem;
+    newLi.addEventListener('click', deleteItem);
+    ul.appendChild(newLi);
+    newLi.appendChild(newButton);});
+
+    // ul.innerHTML = "";
+    // for (let i = 0; i < newArr.length; i++){
+    //     let newLi = document.createElement('li');
+    //     let newButton = document.createElement('button')
+    //     newButton.addEventListener('click', deleteItem)
+    //     newButton.textContent = "delete";
+    //     newLi.textContent = newArr[i];
+    //     newLi.addEventListener('click', deleteItem)
+    //     ul.appendChild(newLi);
+    //     newLi.appendChild(newButton);
         
-    }
+    // }
     
 }
+
 function changeAppearance(){
     this.style.color = 'blue';   
 }
