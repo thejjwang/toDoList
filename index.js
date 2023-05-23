@@ -18,7 +18,7 @@ function myFunction(){
 }
 function renderTasks(){
     ul.innerHTML = "";
-    newArr.map((listItem) => {
+    newArr.forEach((listItem) => {
     let newLi = document.createElement('li');
     let newButton = document.createElement('button');
     newButton.addEventListener('click', deleteItem);
@@ -27,6 +27,18 @@ function renderTasks(){
     newLi.addEventListener('click', deleteItem);
     ul.appendChild(newLi);
     newLi.appendChild(newButton);});
+    
+
+    // ul.innerHTML = "";
+    // newArr.map((listItem) => {
+    // let newLi = document.createElement('li');
+    // let newButton = document.createElement('button');
+    // newButton.addEventListener('click', deleteItem);
+    // newButton.textContent = "delete";
+    // newLi.textContent = listItem;
+    // newLi.addEventListener('click', deleteItem);
+    // ul.appendChild(newLi);
+    // newLi.appendChild(newButton);});
 
     // ul.innerHTML = "";
     // for (let i = 0; i < newArr.length; i++){
